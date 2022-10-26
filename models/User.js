@@ -12,6 +12,7 @@ const UserSchema = new Schema({
     city: String,
     country: String,
     zipCode: String,
+    isVerified: Boolean,
 });
 
 const User = mongoose.model('User', UserSchema);
