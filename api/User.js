@@ -168,7 +168,7 @@ router.post("/signup", (req, res) => {
 });
 
 const sendVerificationEmail = ({ _id, email }, res) => {
-  const currentUrl = "http://localhost:3000/" || "https://damp-inlet-29952.herokuapp.com/";
+  const currentUrl = "https://damp-inlet-29952.herokuapp.com/";
 
   const uniqueString = uuidv4() + _id;
 
