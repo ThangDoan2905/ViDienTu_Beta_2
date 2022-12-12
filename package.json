@@ -4,7 +4,9 @@
   "description": "Backend Only",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "npm install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "author": "thangdd",
   "license": "ISC",
@@ -17,11 +19,21 @@
     "express": "^4.18.2",
     "express-session": "^1.17.3",
     "heroku": "^7.65.0",
+    "http": "^0.0.1-security",
+    "joi": "^17.6.4",
+    "jsonwebtoken": "^8.5.1",
+    "math": "^0.0.3",
     "mongoose": "^6.6.5",
+    "nodeenv": "^3.0.75",
     "nodemailer": "^6.8.0",
-    "nodemon": "^2.0.20",
+    "otp-generator": "^4.0.0",
     "path": "^0.12.7",
     "trim": "^1.0.1",
-    "uuid": "^9.0.0"
+    "ts-node": "^10.9.1",
+    "uuid": "^9.0.0",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
