@@ -12,7 +12,7 @@ const bcrypt = require("bcrypt");
 const emailConfig = require("./../config/emailConfig");
 const generateWalletId = require("./../Services/GenerateWalletIdService");
 
-console.log(generateWalletId() + " test");
+console.log(generateWalletId() + "test");
 // async function generateWId() {
 //   try {
 //     let walletId = ((Math.random() + 0.1) * 100000000000).toString().substring(0, 10);
